@@ -1,0 +1,30 @@
+This will:
+
+    Create the VM if it doesn’t exist
+
+    Attach the ISO and hard disk
+
+    Configure RAM, CPU, VRDP, and shared folders
+
+    Inject your Windows key and do a fully automated unattended install
+
+    Expose RDP access on port 3390
+
+🔐 Security Notes
+
+    Your windows_key.txt file is ignored by Git using .gitignore
+
+    Users like GTAKING2300 are required to change their password on first login
+
+    CMD is disabled for testers using registry policies
+
+    Permissions to C:\CitizenGaming are strictly controlled by ACLs
+
+💡 Pro Tips
+
+    You can RDP into your VM via localhost:3390 once it's booted
+
+    Modify the scripts to add more users, packages, or software
+
+    Use this repo as a template for setting up other secure developer labs
+
