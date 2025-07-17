@@ -2,13 +2,20 @@
 
 ### 🎮 Citizen Gaming Network • Secure Development Environment Installer
 
-This repository contains a fully automated setup system for creating **isolated Windows development VMs** on any VirtualBox-compatible machine — designed for **Citizen Network developers, testers, and staff**.
+This repository contains a secure and fully automated system setup solution for creating an optimized **isolated Windows development VMs** on any VirtualBox-compatible machine — designed for **Citizen Network developers, testers, and staff**.
 
 It ensures a secure, repeatable, and beginner-friendly setup process for:
 - Creating restricted local user accounts
 - Hardening system permissions
 - Installing essential dev tools
 - Automatically provisioning a Windows VM with your product key
+
+- Secure unattended Windows 10 VM creation with VirtualBox
+- Dev user/group setup with strict ACLs
+- Pre-installed developer tools (Python, Node.js, Git, Chocolatey)
+- Shared folder support for host/guest file transfer
+- Performance optimizations for host and VM
+- GitHub-friendly structure, with logs and modular steps
 
 ---
 
@@ -34,7 +41,7 @@ Before running any scripts, make sure your system has:
 - [**PowerShell 5+**](https://docs.microsoft.com/en-us/powershell/)
 - [**VirtualBox**](https://www.virtualbox.org/wiki/Downloads)
 - A valid **Windows 10 ISO** in `C:\ISOs\Win10_22H2_English_x64.iso`
-- A valid **Windows 10 Product Key** stored securely in:
+- A valid Windows product key saved to `C:\SecureKeys\windows_key.txt`
 
 
 If keyboard/mouse don't work inside the VM, install VirtualBox Guest Additions
