@@ -22,7 +22,34 @@ This repository contains PowerShell scripts to:
 4. Run the setup scripts in order from an elevated PowerShell prompt inside the `scripts` folder:
 
 ```powershell
+# Step 1: Setup Dev Groups and ACLs
 .\setup_citizenDevs.ps1
-.\citizen_env_phase1.ps1
-.\citizen_env_phase2.ps1
-.\citizen_vm_builder.ps1
+
+# Step 2: Configure Dev Environment Variables and Git
+.\step_one_citizen_env_setup.ps1
+
+# Step 3: Install Chocolatey, Python, Node.js
+.\step_two_citizen_env_setup.ps1
+
+# Step 4: Build and Launch Citizen VM
+.\Citizen_VM_Builder.ps1
+
+# (Optional) Step 5: Optimize Host + VM Performance
+.\Citizen_Optimize-HostAndVM.ps1
+```
+
+CitizenVMProject/
+├── Citizen_VM_Builder.ps1
+├── Citizen_Optimize-HostAndVM.ps1
+├── setup_citizenDevs.ps1
+├── step_one_citizen_env_setup.ps1
+├── step_two_citizen_env_setup.ps1
+├── .gitignore
+├── README.md
+└── windows_key.txt (IGNORED)
+```
+
+## 🙏 Credits
+
+
+Created with ❤️ by Citizen Gaming Network 
